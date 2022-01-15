@@ -1,0 +1,158 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;  
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.8); 
+}
+
+body {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 50px auto;
+}
+
+.row {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.material-icons { font-size: 15px; }
+
+/**********************************************
+*** DISPLAY
+**********************************************/
+
+.display {
+    height: 40vh;
+    background-color: rgba(11, 30, 73, 0.2);
+    overflow: auto;
+}
+
+.display__budget {
+    margin: 0 auto;
+    text-align: center;    
+    width: 25%;
+    background-color: rgba(11, 30, 73, 0.7);
+    margin-top: 75px;
+}
+
+.display__inc__percentage,
+.display__exp__percentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+
+.display__exp__percentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.display__title { 
+    text-transform: capitalize; 
+}
+
+.display__value, 
+.display__title {
+    font-size: 160%;
+}
+
+.display__inc__title,
+.display__exp__title,
+.display__inc__value,
+.display__exp__value {
+    display: inline;
+    margin: 0 3%;
+    text-transform: uppercase;
+}
+
+.display__inc__value,
+.display__exp__value  {
+    float: right;
+}
+
+.display__inc, .display__exp {
+    width: 25%;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.display__inc {
+    background-color: rgba(62, 139, 97, 0.7);
+    margin-top: 85px;
+}
+
+.display__exp {
+    background-color:rgba(106, 39, 31, 0.7);
+}
+
+/*************** ADD ITEMS *******************/
+
+.add {
+    background-color:rgba(11, 30, 73, 0.8);   
+    padding: 15px;
+}
+
+.add__btn { cursor: pointer; }
+
+input, 
+select, 
+option, 
+i,
+button {
+     color: #000000; 
+     background-color: rgba(255, 255, 255, 0.8); 
+     
+}
+
+/*******************LISTS*****************/
+
+.show {
+    background-color:rgba(11, 30, 73, 0.2);
+    height: 42vh;
+    
+}
+
+.income__title,
+.expenses__title { 
+     font-weight: 800; 
+}
+
+.income__title { color:rgba(29, 190, 101, 0.8); }
+.expenses__title { color: rgba(214, 48, 49, 0.8); }
+
+.income { 
+    float: left; 
+    background-color:rgba(62, 139, 97, 0.3);
+    width: 45%;
+}
+
+.expenses { 
+    width:45%;
+    float: right; 
+    background-color: rgba(106, 39, 31, 0.3);
+}
+
+.item__value {
+    float: right;
+}
+
+.item__description, .item__value {
+    display: inline;
+}
+
+

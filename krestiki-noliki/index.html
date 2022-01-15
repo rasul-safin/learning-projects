@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rasul Safin" />
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="column">
+      <br /><br />
+      <button class="column__player-score" id="player-x-score">0</button>
+      <br />
+      <h2>Игрок 1</h2>
+      <br />
+    </div>
+
+    <div class="container">
+      <h1>Крестики-нолики</h1>
+      <br />
+      <div>
+        <span>
+          <h2>Размер стола:</h2>
+          <select name="board-size" id="board-size-input">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </span>
+        &nbsp
+        <span>
+          <h2>Клеток в ряд:</h2>
+          <select name="to-win-input" id="to-win-input">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </span>
+        <button id="submit-button">Подтвердить</button>
+      </div>
+
+      <br />
+
+      <div>
+        <p class="container__continue-reset">
+          <button id="continue-btn">Продолжить</button>
+          <button id="draw-btn">Ничья</button>
+          <button id="reset-btn">Сбросить</button>
+        </p>
+      </div>
+
+      <div><p class="container__alert"></p></div>
+
+      <br />
+
+      <div class="table-container">
+        <table class="table-container__table">
+          <tbody>
+            <!-- <tr class="x1">
+              <td id="x1 y1">&#8291;</td>
+              <td id="x1 y2">&#8291;</td>
+              <td id="x1 y3">&#8291;</td>
+              <td id="x1 y4">&#8291;</td>
+              <td id="x1 y5">&#8291;</td>
+            </tr>
+            <tr class="x2">
+              <td id="x2 y1">&#8291;</td>
+              <td id="x2 y2">&#8291;</td>
+              <td id="x2 y3">&#8291;</td>
+              <td id="x2 y4">&#8291;</td>
+              <td id="x2 y5">&#8291;</td>
+            </tr>
+            <tr class="x3">
+              <td id="x3 y1">&#8291;</td>
+              <td id="x3 y2">&#8291;</td>
+              <td id="x3 y3">&#8291;</td>
+              <td id="x3 y4">&#8291;</td>
+              <td id="x3 y5">&#8291;</td>
+            </tr>
+            <tr class="x4">
+              <td id="x4 y1">&#8291;</td>
+              <td id="x4 y2">&#8291;</td>
+              <td id="x4 y3">&#8291;</td>
+              <td id="x4 y4">&#8291;</td>
+              <td id="x4 y5">&#8291;</td>
+            </tr>
+            <tr class="x5">
+              <td id="x5 y1">&#8291;</td>
+              <td id="x5 y2">&#8291;</td>
+              <td id="x5 y3">&#8291;</td>
+              <td id="x5 y4">&#8291;</td>
+              <td id="x5 y5">&#8291;</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="column">
+      <br /><br />
+      <button class="column__player-score" id="player-o-score">0</button>
+      <br />
+      <h2>Игрок 2</h2>
+    </div>
+  </body>
+</html>

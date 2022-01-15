@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive;
+}
+
+body {
+  height: 100vh;
+
+  text-align: center;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+h2 {
+  display: inline;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.column__player-score {
+  font-size: 6vh;
+  border: 1px black solid;
+  width: 10vh;
+  height: 10vh;
+}
+
+.column {
+  width: 30vw;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__alert {
+  height: 1rem;
+}
+
+.table-container__table {
+  height: 50vh;
+  width: 50vh;
+  table-layout: fixed;
+}
+
+td {
+  background-color: rgba(0, 0, 0, 5%);
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.column {
+  opacity: 0;
+}
+
+button {
+  padding: 1rem;
+  margin: 0.2rem;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50rem;
+}
+
+button:hover {
+  color: blue;
+}
+
+.column button {
+  cursor: default;
+}
+
+#submit-button {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  background-color: initial;
+  display: block;
+}
+
+#submit-button:hover {
+  color: #b6b3b3de;
+  border-bottom: 1px solid #b6b3b3de;
+}
+
+select {
+  padding: 0.4rem;
+  margin: 0.2rem;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  font-size: 2rem;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+}
+
+.container__continue-reset button {
+  opacity: 0;
+}

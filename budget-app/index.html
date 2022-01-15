@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>Budget app</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="display">
+
+                <div class="display__budget">
+                    <div class="display__title">Avialable budget</div>
+                    <div class="display__value">+ 1.5000.55</div>
+                </div>
+
+                <div class="display__inc">
+                    <div class="display__inc__title">Income</div>
+                    <div class="display__inc__value">+ 2.000.55</div>
+                    <div class="display__inc__percentage">&nbsp;</div>
+                </div>
+
+                <div class="display__exp">
+                    <div class="display__exp__title">Expenses</div>
+                    <div class="display__exp__value">- 500.00</div>
+                    <div class="display__exp__percentage">21%</div>
+                </div>
+            </div>
+                
+            <div class="add">
+                <div class = "row">
+
+                    <select class="add__type">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
+
+                    <input type="text" class="add__description" placeholder="Add description">
+                    <input type="number" class="add__value" placeholder="Value">
+                    <button class="add__btn"> <i class="material-icons">chevron_right</i></button>
+                </div>
+            </div>
+            
+            <div class="show">
+                <div class="row">
+
+                    <div class="income">
+                        <div class="income__title">Income</div>
+
+                        <div class="income__list">
+
+                            <!--
+                            <div class ="item" id="inc-0">
+                                <div class="item__description">New car</div>
+                                <div class="item__value">12222</div>
+                            </div>
+                            -->
+                        
+                        </div>
+                    </div>
+
+                    <div class="expenses">
+                        <div class="expenses__title">Expences</div>
+
+                        <div class ="expenses__list">
+                            
+                            <!--
+                            <div class ="item" id="exp-0">
+                                <div class="item__description">New car</div>
+                                <div class="item__value">12222</div>
+                            </div>
+                            -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
